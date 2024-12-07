@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invoice Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.23/jspdf.plugin.autotable.min.js"></script> <!-- Add this line -->
+</head>
+<body>
+  <div class="container">
+    <h1>Invoice Generator</h1>
+    <h3>Thanks For Shopping</h3>
+    
+    <!-- Invoice table and content go here -->
+    <table id="invoiceTable">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <th>Total</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Rows will be added here dynamically -->
+      </tbody>
+    </table>
+
+    <!-- Subtotal, tax, and grand total section -->
+    <div class="totals">
+      <p>Subtotal: $<span id="subtotal">0.00</span></p>
+      <p>Tax: $<span id="tax">0.00</span></p>
+      <p>Grand Total: $<span id="grandTotal">0.00</span></p>
+    </div>
+
+    <!-- Add Item button -->
+    <button id="addItem">Add Item</button>
+
+    <!-- Generate PDF button -->
+    <button id="generatePdf">Generate PDF</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

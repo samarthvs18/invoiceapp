@@ -1,0 +1,97 @@
+/* Apply a light blue-grey background to the whole body */
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh; /* Ensure the body takes full height of the viewport */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin: 0; /* Remove default margin */
+    background-color: #f0f4f7; /* Light blue-grey background */
+  }
+  
+  /* Center the main container */
+  .container {
+    max-width: 800px; /* Limit the container's width */
+    width: 100%; /* Make the container take full width of available space */
+    padding: 20px;
+    background-color: white; /* Background color for the container */
+    border-radius: 8px; /* Optional: rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: soft shadow */
+  }
+  
+  /* Style the table */
+  table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse; /* Make the table look more compact */
+  }
+  
+  /* Table header styling */
+  th {
+    background-color: #d1e2f1; /* Light blue-grey for header */
+    color: #333; /* Dark text for contrast */
+    padding: 10px;
+    text-align: left;
+    font-weight: normal;
+  }
+  
+  /* Table cell styling */
+  td {
+    padding: 10px;
+    border: 1px solid #ddd; /* Light grey border */
+    text-align: center;
+  }
+  
+  /* Input fields for Item Name, Quantity, and Price */
+  input[type="text"],
+  input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Button styling (black buttons) */
+  button {
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  button:hover {
+    background-color: #333; /* Darker shade of black on hover */
+  }
+  
+  /* Line Total Column */
+  .lineTotal {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Subtotal, Tax, and Grand Total display */
+  .totals p {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Optional: Styling for the delete button */
+  .deleteRow {
+    background-color: #f44336; /* Red color for delete button */
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .deleteRow:hover {
+    background-color: #d32f2f; /* Darker red shade on hover */
+  }
+  
